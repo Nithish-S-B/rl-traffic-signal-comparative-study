@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+
+    <!-- Dead-end entry/exit nodes at 300m from center -->
+    <node id="N" x="0.00"    y="300.00"  type="dead_end"/>
+    <node id="S" x="0.00"    y="-300.00" type="dead_end"/>
+    <node id="E" x="300.00"  y="0.00"    type="dead_end"/>
+    <node id="W" x="-300.00" y="0.00"    type="dead_end"/>
+
+    <!-- Center intersection — traffic_light controlled -->
+    <node id="C" x="0.00" y="0.00" type="traffic_light" tl="C"/>
+
+</nodes>

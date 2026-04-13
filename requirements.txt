@@ -1,0 +1,8 @@
+torch>=1.12.0
+numpy>=1.21.0
+matplotlib>=3.5.0
+# SUMO (install separately via system package manager)
+# Ubuntu/Debian: sudo apt-get install sumo sumo-tools sumo-doc
+# macOS:         brew install sumo
+# Windows:       https://sumo.dlr.de/docs/Downloads.php
+# Set SUMO_HOME environment variable after installation

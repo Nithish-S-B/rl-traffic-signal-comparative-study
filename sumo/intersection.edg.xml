@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+
+    <!-- Incoming edges (toward center C) -->
+    <edge id="NtoC" from="N" to="C" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="StoC" from="S" to="C" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="EtoC" from="E" to="C" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="WtoC" from="W" to="C" numLanes="1" speed="13.89" priority="2"/>
+
+    <!-- Outgoing edges (away from center C) -->
+    <edge id="CtoN" from="C" to="N" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="CtoS" from="C" to="S" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="CtoE" from="C" to="E" numLanes="1" speed="13.89" priority="2"/>
+    <edge id="CtoW" from="C" to="W" numLanes="1" speed="13.89" priority="2"/>
+
+</edges>

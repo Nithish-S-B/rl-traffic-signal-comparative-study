@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+
+    <!--
+        Traffic Light Logic for intersection "C"
+        Phase 0: North-South GREEN  (GG = NtoC→CtoS, StoC→CtoN green)
+                 East-West  RED    (rr = EtoC→CtoW, WtoC→CtoE red)
+        Phase 1: East-West  GREEN  (GG)
+                 North-South RED   (rr)
+
+        Link order is determined by netconvert based on connection order:
+          index 0: NtoC_0 → CtoS_0
+          index 1: StoC_0 → CtoN_0
+          index 2: EtoC_0 → CtoW_0
+          index 3: WtoC_0 → CtoE_0
+    -->
+    <tlLogic id="C" type="static" programID="custom" offset="0">
+        <!-- Phase 0: NS green, EW red — 30 seconds -->
+        <phase duration="30" state="GGrr"/>
+        <!-- Phase 1: EW green, NS red — 30 seconds -->
+        <phase duration="30" state="rrGG"/>
+    </tlLogic>
+
+</additional>

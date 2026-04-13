@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+
+    <!-- North → South (straight through) -->
+    <connection from="NtoC" to="CtoS" fromLane="0" toLane="0"/>
+
+    <!-- South → North (straight through) -->
+    <connection from="StoC" to="CtoN" fromLane="0" toLane="0"/>
+
+    <!-- East → West (straight through) -->
+    <connection from="EtoC" to="CtoW" fromLane="0" toLane="0"/>
+
+    <!-- West → East (straight through) -->
+    <connection from="WtoC" to="CtoE" fromLane="0" toLane="0"/>
+
+</connections>
